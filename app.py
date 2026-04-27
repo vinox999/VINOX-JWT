@@ -63,7 +63,7 @@ def TOKEN_MAKER(OLD_ACCESS_TOKEN, NEW_ACCESS_TOKEN, OLD_OPEN_ID, NEW_OPEN_ID, ui
     Final_Payload = bytes.fromhex(d)
     
     headers = {
-        "Host": "loginbp.ggblueshark.com",
+        "Host": "clientbp.ggpolarbear.com",
         "X-Unity-Version": "2018.4.36f1",
         "Accept": "*/*",
         "Authorization": "Bearer",
@@ -77,7 +77,7 @@ def TOKEN_MAKER(OLD_ACCESS_TOKEN, NEW_ACCESS_TOKEN, OLD_OPEN_ID, NEW_OPEN_ID, ui
         "Connection": "keep-alive"
     }
     
-    URL = "https://loginbp.ggblueshark.com/MajorLogin"
+    URL = "https://loginbp.ggpolarbear.com/MajorLogin"
     RESPONSE = requests.post(URL, headers=headers, data=Final_Payload, verify=False)
     
     if RESPONSE.status_code == 200:
