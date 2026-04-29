@@ -110,7 +110,7 @@ def check_token():
         TEAM = "VINOX_HUB"
         DEV = "@VINOX_HUB"
         
-        url = "http://100067.connect.garena.com/api/v2/oauth/guest/token:grant"
+        url = "https://ffmconnect.live.gop.garenanow.com/oauth/guest/token/grant"
         headers = {
             "Host": "100067.connect.garena.com",
             "User-Agent": "GarenaMSDK/4.0.19P4(G011A ;Android 9;en;US;)",
